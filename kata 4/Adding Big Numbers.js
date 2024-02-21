@@ -4,8 +4,6 @@
  * @param {String} b
  */
 function add(a, b) {
-  if (a.length > b.length) [a, b] = [b, a]
-
   let la = a.length - 1,
     lb = b.length - 1,
     step = 0,
