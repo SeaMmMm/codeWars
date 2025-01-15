@@ -1,18 +1,18 @@
 function repeats(arr) {
-  arr = arr.sort()
+  arr = arr.sort();
   let result = 0,
-    point = 0
-  console.log(arr)
+    point = 0;
+  console.log(arr);
 
   while (point < arr.length) {
     if (arr[point] !== arr[point + 1]) {
-      result += arr[point]
-      point++
+      result += arr[point];
+      point++;
     } else {
-      point += 2
+      point += 2;
     }
   }
-  return result
+  return result;
 }
 
 // solution 2 (without sort)

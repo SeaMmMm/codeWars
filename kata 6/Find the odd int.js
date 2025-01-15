@@ -13,21 +13,21 @@ Examples
 */
 
 function findOdd(A) {
-  const map = new Map()
-  let result
+  const map = new Map();
+  let result;
   for (const num of A) {
-    if (map.has(num)) map.set(num, map.get(num) + 1)
-    else map.set(num, 1)
+    if (map.has(num)) map.set(num, map.get(num) + 1);
+    else map.set(num, 1);
   }
 
   map.forEach((val, key) => {
     if (val % 2 !== 0) {
-      result = key
-      return
+      result = key;
+      return;
     }
-  })
+  });
 
-  return result
+  return result;
 }
 
-console.log(findOdd([1, 1, 2, 3, 4]))
+console.log(findOdd([1, 1, 2, 3, 4]));

@@ -1,11 +1,11 @@
 function count(string) {
-  const obj = {}
+  const obj = {};
 
   for (const str of string) {
-    if (str in obj) obj[str]++
+    if (str in obj) obj[str]++;
     else {
-      obj[str] = 1
+      obj[str] = 1;
     }
   }
-  return obj
+  return obj;
 }

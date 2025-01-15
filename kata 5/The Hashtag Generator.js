@@ -4,16 +4,16 @@
  * @return {String | Boolean}
  */
 function generateHashtag(str) {
-  if (!str.trim().length) return false
+  if (!str.trim().length) return false;
 
-  let result = ['#']
-  const arr = str.split(' ')
+  let result = ['#'];
+  const arr = str.split(' ');
   for (const char of arr) {
-    if (char === '') continue
+    if (char === '') continue;
 
-    result.push(char[0].toUpperCase() + char.slice(1))
+    result.push(char[0].toUpperCase() + char.slice(1));
   }
-  result = result.join('')
+  result = result.join('');
 
-  return result.length <= 140 ? result : false
+  return result.length <= 140 ? result : false;
 }

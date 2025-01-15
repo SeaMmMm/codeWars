@@ -1,3 +1,3 @@
 function booleanToString(b) {
-  return b ? 'true' : 'false'
+  return b ? 'true' : 'false';
 }

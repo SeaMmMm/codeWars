@@ -1,7 +1,7 @@
 var summation = function (num) {
   if (num === 1) {
-    return num
+    return num;
   } else {
-    return num + summation(num - 1)
+    return num + summation(num - 1);
   }
-}
+};
